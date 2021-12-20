@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary-1: hsl(205, 78%, 60%);
+    --dark-primary: #222;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    font-family: var(--ff-primary);
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+    margin: 0;
+    font-size: 14px;
+    background-color: #F1F5F8;
+}
+
+/* NAVBAR */
+
+header {
+    display: grid;
+    align-items: center;
+    height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--clr-primary-1);
+    letter-spacing: var(--spacing);
+    margin: 0;
+}
+
+nav {
+    height: 100%;
+    width: 90vw;
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+a {
+    color: var(--dark-primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    letter-spacing: var(--spacing);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-primary-1)
+}
+
+/* MAIN */
+
+
+main {
+    min-height: calc(100vh - 5rem);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    background: var(--dark-primary);
+    color: #fff;
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 2.5rem;
+}
+
+span {
+    font-weight: inherit;
+    color:var(--clr-primary-1);
+}
+
+.btn {
+    color: var(--dark-primary);
+    border: 2px solid var(--dark-primary);
+    border-radius: var(--radius);
+    letter-spacing: var(--spacing);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: var(--transition);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.btn-hero, .btn-random {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--dark-primary)
+}
